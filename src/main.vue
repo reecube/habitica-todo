@@ -12,7 +12,7 @@
 
                 <!-- Navbar -->
                 <f7-navbar>
-                    <f7-nav-center sliding>Login</f7-nav-center>
+                    <f7-nav-center sliding>{{ title }}</f7-nav-center>
                 </f7-navbar>
 
                 <!-- Pages -->
@@ -39,5 +39,16 @@
 </template>
 
 <script>
-    export default {}
+    export default {
+        methods: {
+            login: function () {
+                console.log('TODO: login');
+            }
+        },
+        data: function () {
+            return {
+                title: 'Login'
+            };
+        }
+    }
 </script>
