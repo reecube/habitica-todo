@@ -283,3 +283,5 @@ plugins/*
 platforms/*
 
 # End of https://www.gitignore.io/api/apachecordova
+
+www/
