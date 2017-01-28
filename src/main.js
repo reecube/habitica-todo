@@ -29,17 +29,20 @@ Vue.use(Framework7Vue);
 
 // Init App
 new Vue({
-	el: '#app',
-	template: '<app/>',
-	// Init Framework7 by passing parameters here
-	framework7: {
-		root: '#app',
-		/* Uncomment to enable Material theme: */
-		// material: true,
-		routes: Routes
-	},
-	// Register App Component
-	components: {
-		app: App
-	}
+    el: '#app',
+    template: '<app/>',
+    // Init Framework7 by passing parameters here
+    framework7: {
+        root: '#app',
+        /* Uncomment to enable Material theme: */
+        // material: true,
+        routes: Routes
+    },
+    // Register App Component
+    components: {
+        app: App
+    }
 });
+
+// Init global variables
+window.$router = f7.views[0].router;

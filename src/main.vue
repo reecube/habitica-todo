@@ -29,7 +29,7 @@
                             </f7-list-item>
                         </f7-list>
                         <f7-list>
-                            <f7-list-button @click="login" title="Einloggen"></f7-list-button>
+                            <f7-list-button @click="onLogin" title="Einloggen"></f7-list-button>
                         </f7-list>
                     </f7-page>
                 </f7-pages>
@@ -41,8 +41,10 @@
 <script>
     export default {
         methods: {
-            login: function () {
-                console.log('TODO: login');
+            onLogin: function (e) {
+                e.preventDefault();
+
+                $router.load({url: '/about/'});
             }
         },
         data: function () {
